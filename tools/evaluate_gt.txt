@@ -1,0 +1,9 @@
+def align(reldepth, sdepth):
+    mask = sdepth > 0
+    scale_shift = np.polyfit(reldepth[mask], sdepth[mask], deg=1)
+    return scale_shift
+
+depth_gt_n = depth_gt*1.0 / depth_gt.max()
+scale_shift = align(depth_r_n, depth_gt_n)
+depth_r = depth_r_n * scale_shift[0] + scale_shift[1] # metric depth
+depth_r_m = depth_r * depth_gt.max()
