@@ -1,5 +1,5 @@
 # RDNeRF
-RDNeRF: Relative Depth Guided NeRF for Dense Free View Synthesis (TVC 2023)
+This is the official repo for the implementation of "RDNeRF: Relative Depth Guided NeRF for Dense Free View Synthesis" (TVC 2023)
 
 ## Acknowlegement
 Our code is built on [NeRF++](https://github.com/Kai-46/nerfplusplus) project. Thanks for this great project!
